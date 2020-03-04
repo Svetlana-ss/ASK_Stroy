@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> АСК_СТРОЙ</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="container header-wrap1">
+                <div class="header-block1">
+                    <img class="header-logo" src="images/logo.png" alt="foto">
+                </div>
+                <div class="header-block2">
+                    <nav class="header-nav">
+                        <ul class="header-nav__menu">
+                            <li class="header-nav__list"><a href="#" class="header-nav__link">Главная</a></li>
+                            <li class="header-nav__list"><a href="#" class="header-nav__link">услуги</a></li>
+                            <li class="header-nav__list"><a href="#" class="header-nav__link">Наши работы</a></li>
+                            <li class="header-nav__list"><a href="#" class="header-nav__link">разрешение на <br> строительство</a></li>
+                            <li class="header-nav__list"><a href="#" class="header-nav__link">Цены</a></li>
+                            <li class="header-nav__list"><a href="#" class="header-nav__link">контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-block3">
+                    <div class="header-contact">
+                        <img class="header-contact__image" src="images/phone.png" alt="foto">
+                    </div><!--
+                --><div class="header-contact">
+                        <span class="header-contact__phone">(048) 772-50-59      
+                            <br> (067) 290-52-55        
+                            <br> (050) 072-62-92
+                        </span>
+                    </div><!--
+                 --><div class="header-button">
+                        <a class="open-button" onclick="openForm()">обратный звонок</a>
+                    </div>
+                    <div class="form-popup" id="myForm">
+                        <form class="form-container">
+                          <h1 class="form-title">Укажите Ваши данные</h1>
+                      
+                          <label class="form-name" for="name"><b>Имя</b></label>
+                          <input  class="form-content" type="text" placeholder="Enter Name" name="name" required>
+                      
+                          <label class="form-name" for="psw"><b>Телефон</b></label>
+                          <input class="form-content" type="phone" placeholder="Enter Phone_number" name="phone" required>
+                      
+                          <button type="submit" class="btn">Заказать звонок</button>
+                          <button type="submit" class="btn cancel" onclick="closeForm()">Отмена</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-wrap2">
+                <div class="header-content">
+                    <p class="header-wrap2__word1">строительство</p>
+                    <p class="header-wrap2__word2">домов</p>
+                    <p class="header-text__cash">от 4199  грн/м2</p>
+                    <div class="header-more">
+                        <a href="#" class="header-more__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="header-wrap2__form">
+                    <form class="section-form" action="#" method="POST">
+                        <img src="images/corner.png" alt="foto" class="section-form__corner">
+                        <img src="images/corner2.png" alt="foto" class="section-form__corner2">
+                        <span class="section-forma__text">ПРОСЧиТать строительство</span>
+                        <input class="section-forma__field" type="text" placeholder="Имя">
+                        <input class="section-forma__field" type="text" placeholder="Телефон">
+                        <input class="section-forma__button" type="button" type="submit" name="button" value="ПЕРЕЗВОНИТЕ МНЕ">
+                    </form>
+                </div>
+            </div>
+            <div class="header-wrap3">
+                <section class="cards">
+                    <section class="card">
+                        <img src="images/corner11.png" alt="corner" class="card__image11">
+                        <img src="images/corner22.png" alt="corner" class="card__image22">
+                        <div class="card-image">
+                            <img class="card-image__image1" src="images/0_proc.png" alt="foto">
+                        </div>
+                        <p class="card-content">Заключаем договор без Аванса 0%</p>
+                    </section>
+                    <section class="card">
+                        <img src="images/corner11.png" alt="corner" class="card__image11">
+                        <img src="images/corner22.png" alt="corner" class="card__image22">
+                        <div class="card-image">
+                            <img class="card-image__image1" src="images/calculator.png" alt="foto">
+                        </div>
+                        <p class="card-content">Бесплатный выезд и расчет сметы</p>
+                    </section>
+                    <section class="card">
+                        <img src="images/corner11.png" alt="corner" class="card__image11">
+                        <img src="images/corner22.png" alt="corner" class="card__image22">
+                        <div class="card-image">
+                            <img class="card-image__image1" src="images/paint-roller.png" alt="foto">
+                        </div>
+                        <p class="card-content">Без переплат по материалам</p>
+                    </section>
+                    <section class="card">
+                        <img src="images/corner11.png" alt="corner" class="card__image11">
+                        <img src="images/corner22.png" alt="corner" class="card__image22">
+                        <div class="card-image">
+                            <img class="card-image__image1" src="images/wallet.png" alt="foto">
+                        </div>
+                        <p class="card-content">Оплата по факту работ</p>
+                    </section>
+                    <section class="card">
+                        <img src="images/corner11.png" alt="corner" class="card__image11">
+                        <img src="images/corner22.png" alt="corner" class="card__image22">
+                        <div class="card-image">
+                            <img class="card-image__image1" src="images/3_года.png" alt="foto">
+                        </div>
+                        <p class="card-content">Гарантия на строительство</p>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </header>
+    <main class="main-wraps">
+        <div class="main-wrap1">
+            <h1 class="main-title">ПРОЕКТИРОВАНИЕ</h1>                
+            <div class="container">
+                <section class="main-design">
+                    <div class="main-wrap2">
+                        <div class="main-cards">
+                            <div class="main-card main-card__bgcolor">
+                                <img src="images/corner.png" alt="corner" class="main-card__corner">
+                                <span class="main-card__text main-card__text-other">ЭСКИЗНЫЙ ПРОЕКТ</span>
+                                <a href="#" class="main-card__link main-card__link-color">Подробнее</a>
+                                <a href="#" class="main-card__linkimg"><img src="images/main-sketch.png" alt="foto" class="main-card__img"></a>
+                                <p class="main-card__text1 main-card__text1-color"><span class="main-card__text40">40 </span>грн/м2</p>
+                                <p class="main-card__text2 main-card__text2-color">*При заказе</p>
+                                <p class="main-card__text2 main-card__text2-color">работ по строительству</p>
+                                <span class="main-card__text1 main-card__text1-color">80  грн/м2</span>
+                                <img src="images/corner2.png" alt="corner2" class="main-card__corner2">
+                            </div>
+                            <div class="main-card">
+                                <span class="main-card__text">КОНСТРУКТИВНЫЙ ПРОЕКТ</span>
+                                <a href="#" class="main-card__link">Подробнее</a>
+                                <a href="#" class="main-card__linkimg"><img src="images/house-sketch.png" alt="foto" class="main-card__img"></a>
+                                <p class="main-card__text1"><span class="main-card__text40">60 </span>грн/м2</p>
+                                <p class="main-card__text2">*При заказе</p>
+                                <p class="main-card__text2">работ по строительству</p>
+                                <span class="main-card__text1">120  грн/м2</span>
+                            </div>
+                            <div class="main-card">
+                                <span class="main-card__text">ИНЖЕНЕРНЫЙ ПРОЕКТ</span>
+                                <a href="#" class="main-card__link">Подробнее</a>
+                                <a href="#" class="main-card__linkimg"><img src="images/blueprint.png" alt="foto" class="main-card__img"></a>
+                                <p class="main-card__text1"><span class="main-card__text40">100 </span>грн/м2</p>
+                                <p class="main-card__text2">*При заказе</p>
+                                <p class="main-card__text2">работ по строительству</p>
+                                <span class="main-card__text1">200  грн/м2</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="main-fonpicture"></div>
+        </div>
+            </section>
+            <section class="main-works container">
+                <div class="main-wrap3">
+                    <h1 class="main-title main-title__width">Наши работы</h1>
+                </div>
+                <div class="works">
+                    <div class="filter" id="myBttnContainer">
+                        <button class="bttn active" onclick="filterSelection('all')">все</button>
+                        <button class="bttn bttn-w174" onclick="filterSelection('stoy')"> строительство</button>
+                        <button class="bttn bttn-w174" onclick="filterSelection('proect')"> проектирование</button>
+                        <button class="bttn" onclick="filterSelection('rem')"> ремонт</button>
+                        <button class="bttn" onclick="filterSelection('diz')"> дизайн</button>
+                    </div>       
+                </div>  
+            </section>
+        </div>  
+        <div class="disp">
+            <img class="filterDiv stoy" src="images/foto1.png" alt="foto1">
+            <div class="filterDiv rem">
+                <img class="rem-size" src="images/foto2.png" alt="foto2">
+                <div class="works-card__pozish">
+                    <div class="works-card__content">
+                        <p class="works-card__title">Ремонт под ключ <span class="works-card__titlegreen">(станее)</span> </p>
+                        <p class="works-card__menu"><span class="works-card__name">Проведенные работы:</span></p>
+                        <p class="works-card__list">·   Малярные  (шпаклевка)</p>
+                        <p class="works-card__list">·   Электромонтажные  (Разводка и установка проводов, розеток)</p>
+                        <p class="works-card__list">·   Сантехнические (Разводка труб и установка сантехники)</p>
+                        <p class="works-card__list">·   Малярные (покраска, обои, ламинат)</p>
+                        <p class="works-card__list">·   Плиточные (облицовка стен)</p>
+                        <div class="works-card__price">
+                            <p class="works-card__title works-card__title-ml10"> ИТОГО: <span class="works-price1"> Работа: 1699 грн/м2</span></p>
+                            <p class="works-price1 works-price2">Черновой материал: 1399 грн/м2×</p>
+                        </div>
+                    </div>
+                    <div class="works-card__content works-card__content2">10 дней</div>
+                </div>
+            </div>
+            <img class="filterDiv stoy" src="images/foto3.png" alt="foto3">
+            <img class="filterDiv diz" src="images/foto4.png" alt="foto4">
+            <img class="filterDiv diz" src="images/foto5.png" alt="foto5">
+            <img class="filterDiv stoy proect" src="images/foto6.png" alt="foto6">
+        </div> 
+        <div class="main-menu__list main-menu__list-morewidth">
+            <a href="#" class="main-menu__link">Смотреть ещё</a>
+        </div> 
+        <div class="container">
+            <section class="main-table">
+                <table class="tablebody">
+                    <caption class="tablebody__name main-title">Сравнение пакетов  по проектированию</caption>
+                    <tr class="tablebody__row">
+                        <th class="tablebody__th tablebody__th-left">составляющие</th>
+                        <th class="tablebody__th tablebody__th-160"></th>
+                        <th class="tablebody__th tablebody__th-581">ЭСКИЗНЫЙ ПРОЕКТ</th>
+                        <th class="tablebody__th tablebody__th-581">КОНСТРУКТИВНЫЙ ПРОЕКТ </th>
+                        <th class="tablebody__th tablebody__th-581">ИНЖЕНЕРНЫЙ ПРОЕКТ</th>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Ситуационный план</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">+</td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Генплан участка</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Планировка помещений</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">+</td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Сечения</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Внешний вид (экстерьер)</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">+</td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">ЗD - Визуализация</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">План фундамента</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">+</td>
+                        <td class="tablebody__project">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Поэтажные планы</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Фасады</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">+</td>
+                        <td class="tablebody__project">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Разрезы</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">План кровли</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">+</td>
+                        <td class="tablebody__project">-</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Архитектурные узлы</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Армирование фундаментов</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">+</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Армирование плиты перекрытия</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Схема расположения монолитного пояса</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">+</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Схема расположения деревянных балок перекрытия</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Схема расположения стропильной системы</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">-</td>
+                        <td class="tablebody__project">+</td>
+                    </tr>
+                    <tr class="tablebody__row">
+                        <td class="tablebody__data tablebody__data-left">Несущая конструкция кровли (основные узлы)</td>
+                        <td class="tablebody__data tablebody__data-img popupIMG" onclick="myFunction()">Пример
+                            <div class="popuptext" id="myPopup"><img src="images/genplan.png" alt="gebplan" ></div>
+                        </td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">-</td>
+                        <td class="tablebody__project tablebody__project-bgcolor">+</td>
+                    </tr>
+                    <tfoot class="table__fon">
+                        <tr class="table__row2">
+                            <td rowspan="2" colspan="2" class="table__end table__endimg"><img src="images/logo.png" alt="logo" class="table__img"></td>
+                            <td class="table__end"><span class="table__end-40">40 </span> грн/м2 <br> при заказе работ</td>
+                            <td class="table__end"><span class="table__end-40">60 </span>  грн/м2 <br> при заказе работ</td>
+                            <td class="table__end"><span class="table__end-40">100 </span>  грн/м2 <br> при заказе работ</td>
+                        </tr>
+                        <tr class="table__row2">
+                            <td class="table__end16px700">80 грн/м2</td>
+                            <td class="table__end16px700">120 грн/м2</td>
+                            <td class="table__end16px700">200 грн/м2</td>
+                        </tr>
+                    </tfoot>                    
+                </table>
+            </section>
+        </div>
+    </div>
+    <div class="main-fon">
+        <div class="container">
+            <section class="stages">
+                <div class="stage-title">
+                    <h1 class="main-title">ЭТАПЫ НАШЕЙ РАБОТЫ</h1>
+                </div> 
+                <div class="stage-cards">
+                    <div class="stage-card">
+                        <div class="stage-phone">
+                            <p class="stage-img__text">Подача заявки</p>
+                        </div>
+                        <p class="stage-img__text2">Мы ответим на интересующие вас вопросы. </p>
+                        <p class="stage-img__text3"><a href="" class="stage-img__link"><span class="stage-img__linktext">Подать заявку</span></a></p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-hand">
+                            <p class="stage-img__text">заключение договора <span class="stage-img__text1">На проектирование </span></p>
+                        </div>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-home">
+                            <p class="stage-img__text">разработка проекта</p>
+                        </div>
+                        <p class="stage-img__text2">Мы разработаем проект согласно Вашим пожеланиям</p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-checklist">
+                            <p class="stage-img__text">Составление сметы</p>
+                        </div>
+                        <p class="stage-img__text2">Мы производим расчеты. Стоимость строительства Вашего будущего дома</p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-image">
+                            <img src="images/decor.png" alt="decor">
+                        </div>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-hand">
+                            <p class="stage-img__text">Заключение договора <span class="stage-img__text1">на строительство</span></p>
+                        </div>
+                        <p class="stage-img__text2">Мы оформляем сотрудничество</p>
+                    </div>
+                    <div class="stage-card stage-card__768">
+                        <div class="stage-toolbox">
+                            <p class="stage-img__text">Старт работ</p>
+                        </div>
+                        <p class="stage-img__text2">Запускается рабочий процесс. Вы пользуетесь преимуществами нашей партнерской программы.</p>
+                    </div>
+                    <div class="stage-card">
+                        <div class="stage-house">
+                            <p class="stage-img__text">Сдача объекта</p>
+                        </div>
+                        <p class="stage-img__text2">Мы сдаем объект.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="main-fon2">
+        <div class="block-decor">
+            <img src="images/decor2.png" alt="decor2">
+        </div>
+        <div class="block-logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+    </div>
+    <div class="main-fon3">
+        <div class="resolution">
+            <div class="resolution-title">
+                <p class="resolution-title__text1">оформление разрешения</p>
+                <p class="resolution-title__text1 resolution-title__text2">на строительство</p>
+                <img src="images/corner11.png" alt="corner" class="resolution-corner">
+                <img src="images/corner222.png" alt="corner222" class="resolution-corner2">
+            </div>
+            <p class="resolution-content">Если Вы ещё не оформили разрешение на строительство, оставьте заявку и наш юрист поможет Вам с оформлением разрешительных документов на проведение строительных работ</p>
+        </div>
+        <div class="main-button">
+            <a href="#" class="main-button__text">Помощь юриста</a>
+        </div>
+    </div>
+        <div class="main-fon4">
+            <div class="container">
+                <div class="questions">
+                    <div class="question-title">
+                        <span class="question-title__text">ОСТАЛИСЬ ВОПРОСЫ?</span>
+                    </div>
+                    <div class="question-forma">
+                        <form class="section-form" action="#" method="POST">
+                            <img src="images/corner.png" alt="foto" class="section-form__corner">
+                            <img src="images/corner2.png" alt="foto" class="section-form__corner2 section-form__corner2-top">
+                            <span class="section-forma__text">Задать вопрос</span>
+                            <input class="section-forma__field" type="text" placeholder="Имя">
+                            <input class="section-forma__field" type="text" placeholder="Телефон">
+                            <input class="section-forma__field" type="text" placeholder="Задать вопрос">
+                            <input class="section-forma__button" type="button" type="submit" name="button" value="ПЕРЕЗВОНИТЕ МНЕ">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="info">
+        <div class="contacts">
+            <div class="container">
+                <div class="contacts-title">
+                    <h1 class="main-title main-title__width">Контакты</h1>
+                </div>
+                <div class="contacts-content">
+                    <div class="contacts-img">
+                        <img src="images/logo-green.png" alt="logo" class="contacts-logo">
+                    </div>
+                    <div class="contacts-phones">
+                        <div class="contacts-main">
+                            <div class="contacts-adress"><!--
+                             --><div class="contacts-adr">
+                                    <p class="contacts-city">г. Одесса</p>
+                                    <p class="contacts-city">ул. Космонавтов 32</p>
+                                </div><!--
+                         --></div>
+                            <div class="contacts-numb">
+                                <div class="contacts-phone">
+                                    <p class="contacts-city">(048) 772-50-59</p>
+                                    <p class="contacts-city">(067) 290-52-55</p>
+                                    <p class="contacts-city">(050) 072-62-92</p>      
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacts-social">
+                            <a href="#" class="contacts-social__network"><img src="images/facebook.png" alt="" class="contacts-social__network-fb"></a>
+                            <a href="#" class="contacts-social__network"><img src="images/odnoklassniki.png" alt="" class="contacts-social__network-od"></a>
+                            <a href="#" class="contacts-social__network"><img src="images/twitter.png" alt="" class="contacts-social__network-tw"></a>
+                            <a href="#" class="contacts-social__network contacts-social__network-pr"><img src="images/vk.png" alt="" class="contacts-social__network-vk"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.884444620778!2d30.715733448204126!3d46.431169916647875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633a651e3fd09%3A0x9331380952bbfd2c!2z0YPQuy4g0JrQvtGB0LzQvtC90LDQstGC0L7QsiwgMzIsINCe0LTQtdGB0YHQsCwg0J7QtNC10YHRgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwgNjUwMDA!5e0!3m2!1sru!2sua!4v1580064098312!5m2!1sru!2sua" width="100%" height="420" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+        <div class="contacts-part1">
+            <div class="container">
+                <div class="contacts-part2">
+                    <div class="header-block1">
+                        <img src="images/logo.png" alt="foto" class="header-img1">
+                    </div>
+                    <div class="header-block2">
+                        <nav class="header-nav">
+                            <ul class="header-nav__menu">
+                                <li class="header-nav__list"><a href="#" class="header-nav__link">Главная</a></li>
+                                <li class="header-nav__list"><a href="#" class="header-nav__link">услуги</a></li>
+                                <li class="header-nav__list"><a href="#" class="header-nav__link">Наши работы</a></li>
+                                <li class="header-nav__list"><a href="#" class="header-nav__link">разрешение на <br> строительство</a></li>
+                                <li class="header-nav__list"><a href="#" class="header-nav__link">Цены</a></li>
+                                <li class="header-nav__list"><a href="#" class="header-nav__link">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="main-button main-button-call">
+                        <a href="#" class="main-button__text">обратный звонок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function openForm() {
+        document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+      // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+     
+    // Show filtered elements
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {
+          element.className += " " + arr2[i];
+        }
+      }
+    }
+     
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+     
+    // Add active class to the current control button (highlight it)
+    var bttnContainer = document.getElementById("myBttnContainer");
+    var bttns = bttnContainer.getElementsByClassName("bttn");
+    for (var i = 0; i < bttns.length; i++) {
+      bttns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+            let popupIMG = document.getElementById("myPopup");
+            popupIMG.classList.toggle("show");
+        }
+    </script>
+</html>
